@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheDataVikas | Learning Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a2e;
+            --paper: #fdf8f0;
+            --accent: #1565c0;
+        }
+
+        body {
+            background: #e8e0d0;
+            font-family: 'Kalam', cursive;
+            color: var(--ink);
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dashboard {
+            background: var(--paper);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+            box-shadow: 3px 4px 20px rgba(0,0,0,0.2);
+            border-radius: 2px;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px dashed #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { font-family: 'Caveat', cursive; font-size: 42px; margin-bottom: 5px; }
+        .tagline { font-size: 16px; color: #666; font-style: italic; }
+
+        .category-section { margin-bottom: 30px; }
+        
+        h2 { 
+            font-family: 'Caveat', cursive; 
+            font-size: 28px; 
+            color: var(--accent);
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        .topic-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .topic-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+
+        .topic-card h3 { font-size: 18px; margin-bottom: 5px; }
+        .topic-card p { font-size: 13px; color: #777; font-family: sans-serif; }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <header>
+        <h1>TheDataVikas Learning Journal</h1>
+        <p class="tagline">"Driving Data Development through Enterprise Architecture"</p>
+    </header>
+
+    <div class="category-section">
+        <h2>🧱 Databricks</h2>
+        <div class="topic-list">
+            <a href="Databricks/Topic1.html" class="topic-card">
+                <h3>Architecture Basics</h3>
+                <p>Nodes, Clusters, and Control Plane vs Data Plane.</p>
+            </a>
+            <a href="Databricks/Topic2.html" class="topic-card">
+                <h3>Unity Catalog</h3>
+                <p>Governance and Metadata management notes.</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="category-section">
+        <h2>🚀 Azure Data Factory</h2>
+        <div class="topic-list">
+            <a href="Azure-Data-Factory/Topic1.html" class="topic-card">
+                <h3>Pipeline Orchestration</h3>
+                <p>Triggers, Activities, and Global Parameters.</p>
+            </a>
+            <a href="Azure-Data-Factory/Topic2.html" class="topic-card">
+                <h3>Self-Hosted IR</h3>
+                <p>Installation and configuration for On-Premise data.</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="category-section">
+        <h2>✨ Microsoft Fabric</h2>
+        <div class="topic-list">
+            <a href="Microsoft-Fabric/Topic1.html" class="topic-card">
+                <h3>OneLake Fundamentals</h3>
+                <p>The "OneDrive for Data" - Shortcuts and Storage.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 TheDataVikas | Built for continuous growth.
+    </footer>
+</div>
+
+</body>
+</html>
