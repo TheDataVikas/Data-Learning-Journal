@@ -4,7 +4,7 @@
 
 ---
 
-## The dataset (assume this schema, no real data needed)
+## The dataset
 
 **`employees`**
 
@@ -230,4 +230,4 @@ df.selectExpr("first_name", "salary * 1.1 AS raised_salary")
 
   Once your fingers know these four shapes cold, almost every "simple" PySpark line is just a variation on one of them.
 
-- **The most common beginner snag** (which you flagged): mixing **string-expression style** (`df.filter("salary > 50000")`) with **Column-object style** (`df.filter(F.col("salary") > 50000)`). Both work, but they can't always be mixed in the same expression. This drill sheet uses Column-object style throughout (the `F.col(...)` pattern) because it's what you'll need for anything conditional (`when`/`otherwise`) or type-safe, so building that habit now pays off later.
+- **The most common beginner snag** : **Column-object style** (`df.filter(F.col("salary") > 50000)`). This drill sheet uses Column-object style throughout (the `F.col(...)` pattern) because it's what you'll need for anything conditional (`when`/`otherwise`) or type-safe, so building that habit now pays off later.
